@@ -7,7 +7,7 @@
   },
   "scripts": {
     "start": "concurrently 'hexo generate --watch' 'budo --dir=public --live --open'",
-    "deploy": "surge --domain=tomek.wiszniewski.cc --project=public"
+    "deploy": "hexo generate && surge --domain=tomek.wiszniewski.cc --project=public"
   },
   "dependencies": {
     "hexo": "^3.2.0",
