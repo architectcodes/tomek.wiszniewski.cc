@@ -4,7 +4,8 @@ menu:
   Archives: /archives
 
 # URL basename of the main cover image. Make sure you deliver three files:
-# <index_cover>@preview.gif, <index_cover>.jpg and <index_cover>@2x.jpg.
+# <index_cover>@preview.gif, <index_cover>.jpg (1920 px wide)
+# and <index_cover>@2x.jpg (3840 px wide).
 index_cover: /img/the-path
 
 # Default post title
