@@ -3,8 +3,9 @@ menu:
   Home: /
   Archives: /archives
 
-# URL of the Home page image
-index_cover: /img/the-path.jpg
+# URL basename of the main cover image. Make sure you deliver three files:
+# <index_cover>@preview.gif, <index_cover>.jpg and <index_cover>@2x.jpg.
+index_cover: /img/the-path
 
 # Default post title
 default_post_title: Untitled
