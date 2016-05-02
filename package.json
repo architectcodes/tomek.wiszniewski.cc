@@ -6,8 +6,9 @@
     "version": "3.2.0"
   },
   "scripts": {
-    "start": "concurrently 'hexo generate --watch' 'budo --dir=public --live --open'",
-    "deploy": "hexo generate && surge --domain=tomek.wiszniewski.cc --project=public"
+    "deploy": "npm run regenerate && surge --domain=tomek.wiszniewski.cc --project=public",
+    "regenerate": "rm -rf public && hexo generate",
+    "start": "concurrently 'hexo generate --watch' 'budo --dir=public --live --open'"
   },
   "dependencies": {
     "hexo": "^3.2.0",
