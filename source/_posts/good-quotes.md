@@ -4,7 +4,7 @@ date: 2016-05-05
 cover: /img/drawing-tools
 ---
 
-Every now and then I stumble across an inspiring quote. Just as everyone else does. I’ve always wanted to have a safe, organized place to keep these. So here it is – my drawer of good quotes!
+Every now and then, I stumble across a quote which changes my life a little bit. I’ve always wanted to have a safe, organized place to keep these little gems. So here it is – my drawer of good quotes!
 
 {% blockquote Yogi Bhajan %}
 If you want to learn something, read about it.  
