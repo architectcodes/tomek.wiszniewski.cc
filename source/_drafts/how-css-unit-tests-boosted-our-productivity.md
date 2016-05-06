@@ -1,9 +1,12 @@
 ---
-title: How CSS unit tests boost our productivity
+title: How CSS unit tests boosted our productivity
+author: Tomek Wiszniewski
+author_url: https://github.com/tomekwi
 ---
-<!-- TODO: boosted? -->
 
 The way you manage styles can make or break a long-running project. …
+
+<!-- more -->
 
 (A bit better)
 
