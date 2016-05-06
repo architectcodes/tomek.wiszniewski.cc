@@ -4,9 +4,18 @@ author: Tomek Wiszniewski
 author_url: https://github.com/tomekwi
 ---
 
-The way you manage styles can make or break a long-running project. …
+The way you manage styles can make or break a long-running web project. Keeping things modular helps a great deal, but that’s only part of the solution.
+
+Six months ago we had a go at setting up CSS unit tests for our components. Brilliant decision, as it turns out! Since then, our job is a lot nicer. The speed of development is fast and steady. Each of us on the team codes with confidence, without the fear that things might unexpectedly break.
+
+And here’s how we did it:
 
 <!-- more -->
+
+
+<!-- TRASH
+
+If you’ve worked on a project bigger than a simple website (which CSS was originally designed for), you probably know much better
 
 (A bit better)
 
@@ -19,3 +28,4 @@ There are a couple of [well-known problems](https://speakerdeck.com/vjeux/react-
 (Very bad)
 
 We all remember how easy it was to get started with CSS on that first small pet project. But with anything larger than a pet landing page stylesheets get notoriously difficult to write and manage. Writing a full-blown progressive web app, you’ll definitely face the problem …
+-->
