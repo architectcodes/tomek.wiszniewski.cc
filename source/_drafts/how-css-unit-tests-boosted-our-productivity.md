@@ -2,18 +2,59 @@
 title: How CSS unit tests boosted our productivity
 author: Tomek Wiszniewski
 author_url: https://github.com/tomekwi
+cover: /img/machinery
 ---
 
 The way you manage styles can make or break a long-running web project. Keeping things modular helps a great deal, but that’s only part of the solution.
 
-Six months ago we had a go at setting up CSS unit tests for our components. Brilliant decision, as it turns out! Since then, our job is a lot nicer. The speed of development is fast and steady. Each of us on the team codes with confidence, without the fear that things might unexpectedly break.
+Six months ago we had a go at setting up CSS unit tests for our components. Brilliant decision, as it turns out! Since then, our job is a lot nicer. The speed of development is fast and steady. Each of us on the team is now coding with confidence, without the fear that things might unexpectedly break.
 
 And here’s how we did it:
 
 <!-- more -->
 
+## A step back
+
+Before we see solution, let’s take a broader look at the problem itself. CSS was originally designed to power simple websites – and it’s a wonderful tool for that. It’s amazing how quickly you can get up and running creating beautiful UI nuggets, which work across all platforms and devices. Just a few lines of CSS make a pretty decent-looking button:
+
+<iframe src="https://jsfiddle.net/27eb7a01/embedded/css,html,result" style="border: none; width: 100%; height: 13em"></iframe>
+
+But since CSS appeared in 1996, the web has changed beyond recognition. We’re now delivering full-blown apps with beautiful, immersive user experiences. Like never before, we’re living the “write once, run anywhere” dream. Web apps [run without installation][step-back.A1] on any device and adapt to the size of the screen, network availability, user permissions, pointing device, viewing mode, browser support and other factors.
+
+{% pullquote %}
+A modern web frontend  
+has zillions of moving parts
+{% endpullquote %}
+
+The price for all this awesomeness is complexity. Countless moving parts which we have to wire up and keep synchronized. And let’s face it – despite web standards moving forward at breakneck speed today, the building blocks that power our apps are still good old HTML, CSS and JavaScript. Technologies designed for simple websites in the mid-nineties.
+
+Let’s focus on CSS. We all know the [problems with CSS at scale][step-back.B1]. We know the feeling when you discover a visual bug caused by that line of CSS changed weeks ago at the other end of your app. We know how much harder it gets with every new member on the team.
+
+<p class="text-center"><figure><img class="img-responsive"
+  src="/post-images/simpsons-jenga.gif"
+  alt="CSS at scale is like Bart Simpson playing Jenga"
+  style="width: 100%"
+/><figcaption>Source: giphy.com</figcaption></figure></p>
+
+Brilliant folks keep coming up with [loads][step-back.B2] [of][step-back.B3] [brilliant][step-back.B4] [solutions][step-back.B5] to many of these problems. We are learning to [write our styles in a modular way][step-back.B6]. We don’t need to worry about the global namespace anymore. But that’s just part of the solution. Just as the arrival of modules to JavaScript didn’t magically make our apps well-organized and bug-free, modular CSS isn’t a cure for every problem.
+
+[step-back.A1]: /good-quotes/#/web-best-app-delivery-platform "The web as an app delivery platform"
+
+[step-back.B1]: https://speakerdeck.com/vjeux/react-css-in-js?slide=2 "CSS in JS – by Christopher Chedeau"
+[step-back.B2]: https://github.com/jsstyles/jss "jsstyles/jss"
+[step-back.B3]: https://github.com/krasimir/cssx "krasimir/cssx"
+[step-back.B4]: https://github.com/css-modules/css-modules "css-modules/css-modules"
+[step-back.B5]: https://github.com/rtfeldman/elm-css "rtfeldman/elm-css"
+[step-back.B6]: http://chrispearce.co/elephants-the-three-code-ilities-two-months-with-css-modules/ "Elephants, The Three Code Ilities, & Two Months With CSS Modules – by Chris Pearce"
 
 <!-- TRASH
+
+From a network of articles it’s growing into an app delivery platform.
+
+Hold on… doesn’t that sound familiar?
+
+Most of us remember the day modular JS arrived to town ([RequireJS](http://requirejs.org/), then [browserify](http://browserify.org/), [webpack](http://webpack.github.io/), [rollup](http://rollupjs.org/) – all while we’re waiting for native ECMAscript modules). This helped a great deal
+
 
 If you’ve worked on a project bigger than a simple website (which CSS was originally designed for), you probably know much better
 
@@ -23,7 +64,7 @@ Writing any non-trivial web app, you’re bound to face the question “How do I
 
 (Still bad – maybe useful for the body)
 
-There are a couple of [well-known problems](https://speakerdeck.com/vjeux/react-css-in-js?slide=2) with CSS and brilliant people are coming up with [loads](https://github.com/jsstyles/jss) [of](https://github.com/krasimir/cssx) [brilliant](https://github.com/css-modules/css-modules) [solutions](https://github.com/rtfeldman/elm-css) to them. We are learning to write our styles in a modular way. We don’t need to worry about the global namespace anymore. Hold on… doesn’t that sound familiar? The same shift happened to JS a few years back.
+ The same shift happened to JS a few years back.
 
 (Very bad)
 
