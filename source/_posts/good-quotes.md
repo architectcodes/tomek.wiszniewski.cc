@@ -1,6 +1,6 @@
 ---
 title: Good quotes
-date: 2016-05-05
+date: 2016-05-03
 cover: /img/drawing-tools
 ---
 
