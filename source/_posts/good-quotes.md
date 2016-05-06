@@ -2,9 +2,11 @@
 title: Good quotes
 date: 2016-05-03
 cover: /img/drawing-tools
+author: Tomek Wiszniewski
+author_url: https://github.com/tomekwi
 ---
 
-Every now and then, I stumble across a quote which changes my life a little bit. I’ve always wanted to have a safe, organized place to keep these little gems. So here it is – my drawer of good quotes!
+Every now and then, I stumble across a quote which changes my life a little bit. I’ve always wanted to have a safe, organized place to keep these little gems. So here it is – my drawer of good quotes! <!-- more -->
 
 {% blockquote Yogi Bhajan %}
 If you want to learn something, read about it.  
