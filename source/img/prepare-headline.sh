@@ -13,21 +13,17 @@ We’ll take ⟪basename⟫.ready.png and generate three files out of it:
 Dependencies:
 
   • ImageMagick
-  • ./noise.png
-  • ./noise@2x.png
 "; exit; fi
 
 set -x
 
-convert "$1.ready.png" 'noise.png' \
+convert "$1.ready.png" \
   -resize 1920 \
-  -composite \
   -quality 92 \
   "$1.jpg"
 
-convert "$1.ready.png" 'noise@2x.png' \
+convert "$1.ready.png" \
   -resize 3840 \
-  -composite \
   -quality 92 \
   "$1@2x.jpg"
 
