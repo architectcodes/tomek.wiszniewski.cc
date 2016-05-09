@@ -52,7 +52,9 @@ Brilliant folks keep coming up with [loads][step-back.B2] [of][step-back.B3] [br
 
 ## Moving fast
 
-The key to moving fast is to embrace change – or even [drive change][moving-fast.A2]. Move forward with confidence, without looking back.
+The key to moving fast is to embrace change – or even [drive change][moving-fast.A]. Move forward with confidence, without looking back.
+
+[moving-fast.A]: https://vimeo.com/91537336 "Bringing Change to Life — by Bill Scott"
 
 {% blockquote Eric Elliott https://medium.com/javascript-scene/how-to-build-a-high-velocity-development-team-4b2360d34021 How to build a high-velocity development team %}
 Eradicate your team’s fear of change.  
@@ -60,14 +62,19 @@ This should be **priority number one** until nobody
 worries about changing a line of code again.
 {% endblockquote %}
 
-Facebook [used to say “move fast and break things”][moving-fast.A1] – but a couple of years ago they announced in a famous keynote: “Breaking things wasn’t helping us to move faster, because we had to slow down to fix these bugs and it wasn't improving our speed”. Following this conclusion, they changed their motto to “move fast with stable infra”.
+Facebook [used to say “move fast and break things”][moving-fast.C] – but a couple of years ago they announced in a famous keynote: “Breaking things wasn’t helping us to move faster, because we had to slow down to fix these bugs and it wasn't improving our speed”. Following this conclusion, they changed their motto to “move fast with stable infra”.
+
+[moving-fast.C]: http://mashable.com/2014/04/30/facebooks-new-mantra-move-fast-with-stability/#BryYX_gAQsqq "Facebook Changes Its ‘Move Fast and Break Things’ Motto — at Mashable"
 
 <p class="text-center"><figure><img class="img-responsive"
   src="/post-images/move-fast-with-stable-infra.jpg"
   alt="Mark Zuckerberg saying “move fast with stable infra”"
 /><figcaption>Source: facebook</figcaption></figure></p>
 
-But what exactly does it mean to “not look back”? What exactly does “stable infra” mean? How to make sure nobody worries about changing code? Eric Elliott gives us another hint in his thought-provoking article:
+But what exactly does it mean to “not look back”? What exactly does “stable infra” mean? How to make sure nobody worries about changing code? Eric Elliott gives us another hint in his [series of][moving-fast.B2] [thought-provoking articles][moving-fast.B1]:
+
+[moving-fast.B1]: https://medium.com/javascript-scene/what-every-unit-test-needs-f6cd34d9836d "5 Questions Every Unit Test Must Answer"
+[moving-fast.B2]: https://medium.com/javascript-scene/how-to-build-a-high-velocity-development-team-4b2360d34021 "How to build a high-velocity development team"
 
 {% blockquote Eric Elliott https://medium.com/javascript-scene/how-to-build-a-high-velocity-development-team-4b2360d34021 How to build a high-velocity development team %}
 **Write automated tests**  
@@ -80,9 +87,6 @@ We definitely found this to be true with libraries doing business logic.
 Heavy refactoring. Taking new people on the team. A major rebase. Swapping out a dependency. Getting rid of dead code. Resurrecting code months after the last commit. Handing projects over. These things happen day to day in an environment of constant change. Without unit tests, you might be facing days, weeks or even months of tedious work. But when a good suite of unit tests has your back, each of these is a breeze.
 
 But what about CSS? Is it possible to keep a similar pace of development there?
-
-[moving-fast.A1]: http://mashable.com/2014/04/30/facebooks-new-mantra-move-fast-with-stability/#BryYX_gAQsqq "Facebook Changes Its ‘Move Fast and Break Things’ Motto — at Mashable"
-[moving-fast.A2]: https://vimeo.com/91537336 "Bringing Change to Life — by Bill Scott"
 
 
 
