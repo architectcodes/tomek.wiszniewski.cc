@@ -48,6 +48,8 @@ On the other hand, we all know the feeling when stylesheets grow fat over time, 
 
 
 
+{% raw %}<a id="/a-step-back"></a>{% endraw %}
+
 ## A step back
 
 Before we see the solution, let’s take a broader look at the problem itself. CSS was originally designed to power simple websites – and it’s a wonderful tool for that. It’s amazing how quickly you can get up and running creating beautiful UI nuggets, which work across all platforms and devices. Just a few lines of CSS make a pretty decent-looking button:
@@ -86,6 +88,8 @@ Brilliant folks keep coming up with [loads][step-back.B2] [of][step-back.B3] [br
 
 
 
+
+{% raw %}<a id="/moving-fast"></a>{% endraw %}
 
 ## Moving fast
 
