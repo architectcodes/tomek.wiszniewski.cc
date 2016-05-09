@@ -14,6 +14,10 @@ If you want to understand something, write about it.
 If you want to master something, teach it.
 {% endblockquote %}
 
+{% blockquote Kornelije Petak http://code.kornelijepetak.com/climb-the-curve/ Climb the curve %}
+![Solution quality vs thinking time](/post-images/quality-over-time.png)
+{% endblockquote %}
+
 {% raw %}<a id="/web-best-app-delivery-platform"></a>{% endraw %}
 {% blockquote Richard Feldman https://youtu.be/WqV5kqaFRDU Web Apps without Web Servers %}
 We’d have to step into the realm of science fiction  
