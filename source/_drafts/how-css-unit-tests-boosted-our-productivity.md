@@ -13,6 +13,41 @@ And here’s how we did it:
 
 <!-- more -->
 
+
+
+{% raw %}<a id="/our-story"></a>{% endraw %}
+
+## Our story
+
+Let’s start with a story. A year ago I was developing a UI framework similar in scope and stack to Twitter Bootstrap. A LESS monolith with around 20 well-documented components – some of them sprinkled with a pinch of JS. Development went really smoothly at first. We shipped a successful prototype and got another contract for developing the long-term production app itself.
+
+The prototype was very well received. So, with another contract down the line, we faced scaling the project way over what we than had. To meet a tight deadline, we took other developers on the team. After all, a bigger team means that things go faster – that’s how it’s supposed to work, isn’t it?
+
+Well, not in our case. As soon as more people laid their hands on the project, serious problems began.
+
+{% pullquote %}
+When your team grows,  
+CSS gets hairy
+{% endpullquote %}
+
+“Why is this CSS rule here? What happens if I change it? Looks good in this view, should be okay.” — “This other view is broken! Why was this line of CSS over there changed three weeks ago?” We all know this, right?
+
+{% pullquote %}
+“Poking around  
+until it works”
+{% endpullquote %}
+
+On the other hand, we all know the feeling when stylesheets grow fat over time, out of uncertainty. “Why is this CSS rule here? This view looks good if I change it, but what if I break another view? I’d better add a new class and use the new one instead.” Everyone keeps adding stuff to the CSS, rather than reusing, optimizing or cleaning up existing code.
+
+<p class="text-center"><figure><img class="img-responsive"
+  src="/post-images/stacking-foam-blocks.gif"
+  alt="Video of a guy stacking giant foam blocks in a warehouse"
+  style="width: 100%"
+/><figcaption>Source: giphy.com</figcaption></figure></p>
+
+
+
+
 ## A step back
 
 Before we see the solution, let’s take a broader look at the problem itself. CSS was originally designed to power simple websites – and it’s a wonderful tool for that. It’s amazing how quickly you can get up and running creating beautiful UI nuggets, which work across all platforms and devices. Just a few lines of CSS make a pretty decent-looking button:
@@ -89,34 +124,3 @@ We definitely found this to be true with libraries doing business logic.
 Heavy refactoring. Taking new people on the team. A major rebase. Swapping out a dependency. Getting rid of dead code. Resurrecting code months after the last commit. Handing projects over. These things happen day to day in an environment of constant change. Without unit tests, you might be facing days, weeks or even months of tedious work. But when a good suite of unit tests has your back, each of these is a breeze.
 
 But what about CSS? Is it possible to keep a similar pace of development there?
-
-
-
-
-## Our story
-
-
-
-<!-- TRASH
-
-From a network of articles it’s growing into an app delivery platform.
-
-Hold on… doesn’t that sound familiar?
-
-Most of us remember the day modular JS arrived to town ([RequireJS](http://requirejs.org/), then [browserify](http://browserify.org/), [webpack](http://webpack.github.io/), [rollup](http://rollupjs.org/) – all while we’re waiting for native ECMAscript modules). This helped a great deal
-
-
-If you’ve worked on a project bigger than a simple website (which CSS was originally designed for), you probably know much better
-
-(A bit better)
-
-Writing any non-trivial web app, you’re bound to face the question “How do I manage styles in a sustainable way”. The bigger your team and the more sophisticated the app, the more relevant the question gets.
-
-(Still bad – maybe useful for the body)
-
- The same shift happened to JS a few years back.
-
-(Very bad)
-
-We all remember how easy it was to get started with CSS on that first small pet project. But with anything larger than a pet landing page stylesheets get notoriously difficult to write and manage. Writing a full-blown progressive web app, you’ll definitely face the problem …
--->
