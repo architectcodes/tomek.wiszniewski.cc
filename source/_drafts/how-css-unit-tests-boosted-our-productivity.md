@@ -244,6 +244,49 @@ By writing CSS unit tests each of us can tell others exactly what he meant to ac
 
 
 
+{% raw %}<a id="/slim-stylesheets"></a>{% endraw %}
+
+## No more fat stylesheets
+
+I mentioned [another problem](#/our-story/fat-stylesheets) at the beginning of the article. Remember that guy stacking foam blocks? When people need new features, they just keep adding things to the CSS, instead of reusing what’s already there.
+
+So let’s see how our CSS unit tests help us keep our stylesheets lean.
+
+We face the implementation of with another cool design, which no longer has one element centered within a parent – but two of them, stacked one under the other.
+
+The immediate idea is to create a new component for that, or an extra modifier for our component. This all means more code. But maybe, just maybe, it might be possible with our little component – without adding any new classes? Let’s check that by adding some new requirements to our existing ones:
+
+* If we have two `.child` elements, they should be stacked one over the other.
+* Both `.child`ren should be centered horizontally.
+* The distance above the first `.child` should equal the distance below the second one.
+
+Here’s how it translates to new tests:
+
+<iframe src="https://jsfiddle.net/cs65apup/1/embedded/js,result" style="border: none; width: 100%; height: 47em"></iframe>
+
+Of course, our new tests will initially fail. But what if we take another approach:
+
+<iframe src="https://jsfiddle.net/cs65apup/3/embedded/js,result" style="border: none; width: 100%; height: 13.5em"></iframe>
+
+A look at the results… Victory!
+
+<iframe src="https://jsfiddle.net/cs65apup/3/embedded/result,js" style="border: none; width: 100%; height: 31.5em"></iframe>
+
+Hey, let’s have a look at what we’ve just done. We added another feature by actually reducing the amount of code! And we’re absolutely sure that our previous features work alright. Now that’s what you call responsible development! After all, we all know that…
+
+{% blockquote Jeff Atwood, http://blog.codinghorror.com/the-best-code-is-no-code-at-all/ The Best Code is No Code At All %}
+…the best code  
+is no code at all
+{% endblockquote %}
+
+This wasn’t possible before with CSS. If you ask me, it’s amazing! Really, really amazing.
+
+<p class="text-center"><figure><img class="img-responsive"
+  src="/post-images/yeeees.gif"
+  alt="“Yeeees!” – says an excited girl wearing glasses"
+  style="width: 100%"
+/><figcaption>Source: giphy.com</figcaption></figure></p>
+
 <!--
 The first concept of testing whole UIs is integration testing by [comparing screenshots][heres-how.A]. There are several problems with that though. You can’t write your tests before implementing stuff. You can’t automate it fully. You can’t run the tests in different browsers.
 
