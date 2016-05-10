@@ -30,12 +30,16 @@ When your team grows,
 CSS gets hairy
 {% endpullquote %}
 
+{% raw %}<a id="/our-story/regressions"></a>{% endraw %}
+
 “Why is this CSS rule here? What happens if I change it? Looks good in this view, should be okay.” — “This other view is broken! Why was this line of CSS over there changed three weeks ago?” We all know this, right?
 
 {% pullquote %}
 “Poking around  
 until it works”
 {% endpullquote %}
+
+{% raw %}<a id="/our-story/fat-stylesheets"></a>{% endraw %}
 
 On the other hand, we all know the feeling when stylesheets grow fat over time, out of uncertainty. “Why is this CSS rule here? This view looks good if I change it, but what if I break another view? I’d better add a new class and use the new one instead.” Everyone keeps adding stuff to the CSS, rather than reusing, optimizing or cleaning up existing code.
 
@@ -219,6 +223,26 @@ Pretty cool, isn’t it?
   alt="“Brent Rambo approves” in an Apple ad from the early 90s"
   style="width: 100%"
 /><figcaption>Source: imgur.com</figcaption></figure></p>
+
+
+
+
+{% raw %}<a id="/regressions"></a>{% endraw %}
+
+## No more regressions
+
+Remember the [first problem with CSS at scale](#/our-story/regressions) I mentioned? In my experience, regressions are common in a traditional CSS project led by a bigger team. Let’s see how unit tests help rule them out.
+
+See that `float: left` line in our test? Doesn’t seem very logical, does it? If I saw that in a project I were to clean up, I bet I’d think it’s an old leftover. So let’s try to take out the `float` out:
+
+<iframe src="https://jsfiddle.net/5ypbnuk9/6/embedded/result,js" style="border: none; width: 100%; height: 25em"></iframe>
+
+Amazing, isn’t it? The tests not only spotted a problem, but also told us what the problem is! If you want to investigate it yourself with developer tools, change the second `test(…)` call to `test.only(…)` – you can find the rendered DOM right inside your `<body>`.
+
+By writing CSS unit tests each of us can tell others exactly what he meant to achieve with his styles.
+
+
+
 
 <!--
 The first concept of testing whole UIs is integration testing by [comparing screenshots][heres-how.A]. There are several problems with that though. You can’t write your tests before implementing stuff. You can’t automate it fully. You can’t run the tests in different browsers.
