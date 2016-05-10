@@ -127,4 +127,34 @@ We definitely found this to be true with libraries doing business logic.
 
 Heavy refactoring. Taking new people on the team. A major rebase. Swapping out a dependency. Getting rid of dead code. Resurrecting code months after the last commit. Handing projects over. These things happen day to day in an environment of constant change. Without unit tests, you might be facing days, weeks or even months of tedious work. But when a good suite of unit tests has your back, each of these is a breeze.
 
-But what about CSS? Is it possible to keep a similar pace of development there?
+But what about CSS? How is it possible to keep a similar pace of development there?
+
+
+
+
+{% raw %}<a id="/heres-how"></a>{% endraw %}
+
+## Here’s how
+
+Writing unit tests for CSS is a lot easier than it looks. If you’ve already written these for other languages, you’ll feel right at home.
+
+This section is structured like a tutorial – feel free to follow along.
+
+First of all, let’s install the [good and simple][heres-how.A1] test library [*tape*][heres-how.A2]. You could do this all with *tape* itself, but we’ve written a kinda-plugin for it to make CSS unit tests much more elegant: [*tape-css*][heres-how.A3]. Let’s install that as well. We’ll also use [*tap-browser-el*][heres-how.A4] to render the test results in the live snippets below. So here’s our test boilerplate:
+
+[heres-how.A1]: https://medium.com/javascript-scene/why-i-use-tape-instead-of-mocha-so-should-you-6aa105d8eaf4 "Why I use Tape Instead of Mocha & So Should You"
+[heres-how.A2]: https://github.com/substack/tape "tap-producing test harness for node and browsers – substack/tape"
+[heres-how.A3]: https://git.io/tape-css "CSS unit testing. Lightning-fast. tape-style – git.io/tape-css"
+[heres-how.A4]: https://github.com/Jam3/tap-browser-el "A tap reporter which adds an element to the DOM – Jam3/tap-browser-el"
+
+<iframe src="https://jsfiddle.net/3w6aun36/3/embedded/js,result" style="border: none; width: 100%; height: 15.5em"></iframe>
+
+<!--
+The first concept of testing whole UIs is integration testing by [comparing screenshots][heres-how.A]. There are several problems with that though. You can’t write your tests before implementing stuff. You can’t automate it fully. You can’t run the tests in different browsers.
+
+{% pullquote %}
+
+{% endpullquote %}
+
+[heres-how.A]: http://tldr.huddle.com/blog/css-testing/ "CSS regression testing"
+-->
