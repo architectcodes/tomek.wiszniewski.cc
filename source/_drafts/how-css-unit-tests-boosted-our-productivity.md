@@ -17,7 +17,7 @@ And here’s how we did it:
 
 {% raw %}<a id="/our-story"></a>{% endraw %}
 
-## Our story
+## Our tale
 
 Let’s start with a story. Over a year ago I started developing a UI framework. Initially, it was similar in scope and stack to Twitter Bootstrap. A LESS monolith with around 20 well-documented, kinda-independent components – some of them sprinkled with a pinch of JS. Development went really smoothly at first. We quickly shipped a successful prototype, very well received. We ended up with another contract for developing the long-term project itself.
 
