@@ -287,12 +287,32 @@ This wasn’t possible before with CSS. If you ask me, it’s amazing! Really, r
   style="width: 100%"
 /><figcaption>Source: giphy.com</figcaption></figure></p>
 
-<!--
-The first concept of testing whole UIs is integration testing by [comparing screenshots][heres-how.A]. There are several problems with that though. You can’t write your tests before implementing stuff. You can’t automate it fully. You can’t run the tests in different browsers.
+
+
+
+{% raw %}<a id="/in-a-nutshell"></a>{% endraw %}
+
+## In a nutshell
+
+Writing unit tests for the UI is a whole new quality of development in the world of CSS. Until now, the only popular form of testing the UI I’m aware of was integration testing by [comparing screenshots][in-a-nutshell.A1]. In my opinion, though it does help spot regressions faster, it doesn’t really make you move faster. You can’t write your tests before implementing stuff. You can’t automate it fully. You can’t run the tests in different browsers without significant infrastructure overhead. Oh, and it’s way too slow for live development workflow – whereas proper unit tests deliver you results within milliseconds of saving the stylesheet.
+
+[in-a-nutshell.A1]: http://tldr.huddle.com/blog/css-testing/ "CSS regression testing"
+
+We’ve always wanted to move fast with CSS. It looks like this dream is coming true right before our eyes. With CSS modules on their way – and a plethora of different ways to keep your styles modular and DRY – the only thing left until now was a way to develop with confidence. It’s now there!
 
 {% pullquote %}
-
+CSS is finally entering  
+an era of sanity
 {% endpullquote %}
 
-[heres-how.A]: http://tldr.huddle.com/blog/css-testing/ "CSS regression testing"
--->
+Before you go, I’d like to share two small facts with you.
+
+Firstly, the example you’ve seen in the tutorial isn’t a contrived case made up for the blog post. It’s the exact story of one of our production components. To make the story more interesting, the component `middle` which does that is a low-level components which other components mix in as an internal dependency. After the fundamental change we explored in the [*No more fat stylesheets*](#/slim-stylesheets) section, all dependent components continued to work without a glitch.
+
+Secondly, what we’ve just seen is measuring dimensions – one of the hardest and most important things to get exactly right with CSS. But with tools like [`getComputedStyle`][in-a-nutshell.B1] you can actually test anything. We started out with testing only dimensions, but experience taught us to test virtually everything. That’s right, 100% code coverage on CSS components! (We’re even toying with the idea of a CSS code coverage tool. More details soon, hopefully!)
+
+[in-a-nutshell.B1]: http://devdocs.io/dom/window/getcomputedstyle "window.getComputedStyle – on DevDocs"
+
+If you’ve got any comments, ideas you’d like to share or critical thoughts, don’t hesitate to leave a comment below! If you try out our ideas, feel free to give me a shout at [@tomekwi_](https://twitter.com/tomekwi_).
+
+If you liked this article, you can help me spread the word by [sharing it on Twitter](https://twitter.com/share?text=%E2%80%9CHow%20CSS%20unit%20tests%20boosted%20our%20productivity%E2%80%9D%20%E2%80%94%20by%20%40tomekwi_&url=http%3A%2F%2Ftomek.wiszniewski.cc%2Fhow-css-unit-tests-boosted-our-productivity%2F). Thanks a lot!
