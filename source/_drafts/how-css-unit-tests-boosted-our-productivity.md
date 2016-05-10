@@ -149,7 +149,6 @@ First of all, let’s install the [good and simple][heres-how.A1] test library [
 [heres-how.A1]: https://medium.com/javascript-scene/why-i-use-tape-instead-of-mocha-so-should-you-6aa105d8eaf4 "Why I use Tape Instead of Mocha & So Should You"
 [heres-how.A2]: https://github.com/substack/tape "tap-producing test harness for node and browsers – substack/tape"
 [heres-how.A3]: https://git.io/tape-css "CSS unit testing. Lightning-fast. tape-style – git.io/tape-css"
-[heres-how.A4]: https://github.com/Jam3/tap-browser-el "A tap reporter which adds an element to the DOM – Jam3/tap-browser-el"
 [heres-how.A5]: https://github.com/dominictarr/hyperscript "Create HyperText with JavaScript – dominictarr/hyperscript"
 
 <iframe src="https://jsfiddle.net/3w6aun36/4/embedded/js,result" style="border: none; width: 100%; height: 15.5em"></iframe>
@@ -181,6 +180,45 @@ Now let’s wire that up with all we’ve written so far. Et voilà! Our compone
 
 <iframe src="https://jsfiddle.net/5ypbnuk9/5/embedded/result,js" style="border: none; width: 100%; height: 20em"></iframe>
 
+
+
+
+{% raw %}<a id="/how-it-works"></a>{% endraw %}
+
+## Whoah! How does that work?
+
+[*tape-css*][heres-how.A3] is a thin API wrapper over [*tape*][heres-how.A2] which adds two additional options to the original config of the `test` function: `dom` and `styles`. *tape-css* will take the `dom` element along with all its ancestors and add it to the `<body>` before the test begins. It’ll also clean up by removing the element after the test has ended. `styles` work very similarly – they are added as a `<style>` element to the `<head>` before the test and cleaned up after the test ends.
+
+Since *tape* prints [TAP output][how-it-works.B1] to the JS console, it’s very easy to process in different ways. If you want to check out what the raw TAP stream looks like, go ahead and open your browser console. Right now! You should see the raw TAP results of our test above. Pretty cool, isn’t it? We’ve used [*tap-browser-el*][how-it-works.B2] to format the results in the live snippets, but you can also make TAP pretty [directly in the browser console][how-it-works.B3] and [in the terminal][how-it-works.B4].
+
+[how-it-works.B1]: https://en.wikipedia.org/wiki/Test_Anything_Protocol "Test Anything Protocol – on Wikipedia"
+[how-it-works.B2]: https://github.com/Jam3/tap-browser-el "A tap reporter which adds an element to the DOM – Jam3/tap-browser-el"
+[how-it-works.B3]: https://github.com/Jam3/tap-dev-tool "Prettify TAP in the browser's console – Jam3/tap-dev-tool"
+[how-it-works.B4]: https://github.com/scottcorgan/tap-spec "Formatted TAP output like Mocha's spec reporter – scottcorgan/tap-spec"
+
+Speaking of the terminal, there are also multiple ways to run CSS test in a fast headless environment, directly from your terminal. The best tool I’ve found for this is [*tape-run*][how-it-works.C1]. It starts a lightning-fast instance of *electron*, directs the output to the console and gives you a `0`/`1` exit code. All within a fraction of a second! You can also use *tape-run* to run your tests in any good old traditional browsers installed on your system or CI server, such as *Chrome* or *IE*.
+
+[how-it-works.C1]: https://github.com/juliangruber/tape-run "Headless tape test runner – juliangruber/tape-run"
+
+Come to think of it. You once had to click through your whole app in different browsers to look for visual errors. Well, with unit tests you no longer have to! All you need is push your changes and a CI server like [Travis][how-it-works.D1] can do all the heavy testing for you. If anything goes wrong, you get an email notification with a detailed bug report from your unit tests. Because…
+
+[how-it-works.D1]: https://travis-ci.org/ "Travis CI"
+
+{% blockquote Eric Elliott, https://medium.com/javascript-scene/what-every-unit-test-needs-f6cd34d9836d
+5 Questions Every Unit Test Must Answer %}
+…a failing test should read  
+like a high-quality bug report.
+{% endblockquote %}
+
+All that happens in the background, before it has a chance to affect any users. Now we can really move fast and confidently.
+
+Pretty cool, isn’t it?
+
+<p class="text-center"><figure><img class="img-responsive"
+  src="/post-images/brent-rambo.gif"
+  alt="“Brent Rambo approves” in an Apple ad from the early 90s"
+  style="width: 100%"
+/><figcaption>Source: imgur.com</figcaption></figure></p>
 
 <!--
 The first concept of testing whole UIs is integration testing by [comparing screenshots][heres-how.A]. There are several problems with that though. You can’t write your tests before implementing stuff. You can’t automate it fully. You can’t run the tests in different browsers.
