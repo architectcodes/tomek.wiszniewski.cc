@@ -164,7 +164,9 @@ Now, let’s make sure we know exactly what our element should do.
 * `.child` should be centered horizontally within its `.parent`.
 * `.child` should be centered vertically within its `.parent`.
 
-Let’s translate this to tests, which will automatically make sure our requirements are met. Since we’ll be working a lot with positioning, let’s define a simple helper function for that:
+Let’s translate this to tests, which will automatically make sure our requirements are met. Since we’ll be working a lot with [positioning][heres-how.E], let’s define a simple helper function for that:
+
+[heres-how.E]: https://twitter.com/barneycarroll/status/728616021939064832 "The weirdness of getBoundingClientRect – by @barneycarroll"
 
 <iframe src="https://jsfiddle.net/5ypbnuk9/2/embedded/js" style="border: none; width: 100%; height: 8em"></iframe>
 
