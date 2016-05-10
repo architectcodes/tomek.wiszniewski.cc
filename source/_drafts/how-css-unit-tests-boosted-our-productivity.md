@@ -138,18 +138,40 @@ But what about CSS? How is it possible to keep a similar pace of development the
 
 Writing unit tests for CSS is a lot easier than it looks. If you’ve already written these for other languages, you’ll feel right at home.
 
-This section is structured like a tutorial – feel free to follow along.
+This section is structured like a simple tutorial – feel free to follow along or play around with the live snippets. At the end of the article, I’ll explain how to run the tests headlessly and get the workflow more automated.
 
-First of all, let’s install the [good and simple][heres-how.A1] test library [*tape*][heres-how.A2]. You could do this all with *tape* itself, but we’ve written a kinda-plugin for it to make CSS unit tests much more elegant: [*tape-css*][heres-how.A3]. Let’s install that as well. We’ll also use [*tap-browser-el*][heres-how.A4] to render the test results in the live snippets below. So here’s our test boilerplate:
+Our task is to solve the perennial problem of [centering an element within its parent both horizontally and vertically][heres-how.B1]. We’ll do this in a test-driven manner and go on to see how this helps keep a steady pace of development in a UI-heavy project.
+
+[heres-how.B1]: http://stackoverflow.com/questions/14123999/center-a-div-horizontally-and-vertically "Center a DIV horizontally and vertically – on StackOverflow"
+
+First of all, let’s install the [good and simple][heres-how.A1] test library [*tape*][heres-how.A2]. You could do this all with *tape* itself, but we’ve written a kinda-plugin for it to make CSS unit tests much more elegant: [*tape-css*][heres-how.A3]. Let’s install that as well. The last tool we need is [*hyperscript*][heres-how.A5] – it’ll help us create test DOM trees more conveniently. So here’s our test boilerplate, along with a sample test and assertion:
 
 [heres-how.A1]: https://medium.com/javascript-scene/why-i-use-tape-instead-of-mocha-so-should-you-6aa105d8eaf4 "Why I use Tape Instead of Mocha & So Should You"
 [heres-how.A2]: https://github.com/substack/tape "tap-producing test harness for node and browsers – substack/tape"
 [heres-how.A3]: https://git.io/tape-css "CSS unit testing. Lightning-fast. tape-style – git.io/tape-css"
 [heres-how.A4]: https://github.com/Jam3/tap-browser-el "A tap reporter which adds an element to the DOM – Jam3/tap-browser-el"
+[heres-how.A5]: https://github.com/dominictarr/hyperscript "Create HyperText with JavaScript – dominictarr/hyperscript"
 
-<iframe src="https://jsfiddle.net/3w6aun36/3/embedded/js,result" style="border: none; width: 100%; height: 15.5em"></iframe>
+<iframe src="https://jsfiddle.net/3w6aun36/4/embedded/js,result" style="border: none; width: 100%; height: 15.5em"></iframe>
+
+Now, let’s make sure we know exactly what our element should do.
+
+* `.parent` should take up the whole width and height of its container.
+* `.child` should grow and shrink to fit its contents.
+* `.child` should be centered horizontally within its `.parent`.
+* `.child` should be centered vertically within its `.parent`.
+
+Let’s translate this to tests, which will automatically make sure our requirements are met. Since we’ll be working a lot with positioning, let’s define a simple helper function for that:
+
+<iframe src="https://jsfiddle.net/5ypbnuk9/2/embedded/js" style="border: none; width: 100%; height: 8em"></iframe>
+
+Now that we have that covered, we can write the tests themselves:
+
+<iframe src="https://jsfiddle.net/5ypbnuk9/4/embedded/js,result" style="border: none; width: 100%; height: 50em"></iframe>
 
 <!--
+By the way, what we’re doing right
+
 The first concept of testing whole UIs is integration testing by [comparing screenshots][heres-how.A]. There are several problems with that though. You can’t write your tests before implementing stuff. You can’t automate it fully. You can’t run the tests in different browsers.
 
 {% pullquote %}
