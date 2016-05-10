@@ -165,13 +165,24 @@ Let’s translate this to tests, which will automatically make sure our requirem
 
 <iframe src="https://jsfiddle.net/5ypbnuk9/2/embedded/js" style="border: none; width: 100%; height: 8em"></iframe>
 
-Now that we have that covered, we can write the tests themselves:
+Now we have that covered, we can write the tests themselves:
 
 <iframe src="https://jsfiddle.net/5ypbnuk9/4/embedded/js,result" style="border: none; width: 100%; height: 50em"></iframe>
 
-<!--
-By the way, what we’re doing right
+By the way, we’ve just done a very healthy thing – we’re thinking about *what* we want to do before we actually do it.
 
+If you switched to the *Result* tab above, you surely noticed that our tests fail. No wonder – we haven’t written any styles yet! Let’s do it right now. To keep things simple, we’ll write the styles as a raw string right inside our test file. In the real world, you’d probably want to import them from a CSS module, a raw CSS file, or a preprocessor like [JSS][heres-how.C] or LESS. There we go:
+
+[heres-how.C]: https://github.com/jsstyles/jss "A lib for generating Style Sheets with JavaScript – jsstyles/jss"
+
+<iframe src="https://jsfiddle.net/spsv13sa/embedded/js" style="border: none; width: 100%; height: 19.5em"></iframe>
+
+Now let’s wire that up with all we’ve written so far. Et voilà! Our component is ready.
+
+<iframe src="https://jsfiddle.net/5ypbnuk9/5/embedded/result,js" style="border: none; width: 100%; height: 20em"></iframe>
+
+
+<!--
 The first concept of testing whole UIs is integration testing by [comparing screenshots][heres-how.A]. There are several problems with that though. You can’t write your tests before implementing stuff. You can’t automate it fully. You can’t run the tests in different browsers.
 
 {% pullquote %}
