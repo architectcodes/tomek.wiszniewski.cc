@@ -19,9 +19,9 @@ And here’s how we did it:
 
 ## Our story
 
-Let’s start with a story. A year ago I was developing a UI framework similar in scope and stack to Twitter Bootstrap. A LESS monolith with around 20 well-documented components – some of them sprinkled with a pinch of JS. Development went really smoothly at first. We shipped a successful prototype and got another contract for developing the long-term production app itself.
+Let’s start with a story. Over a year ago I started developing a UI framework – at first, similar in scope and stack to Twitter Bootstrap. A LESS monolith with around 20 well-documented, kinda-independent components – some of them sprinkled with a pinch of JS. Development went really smoothly at first. We quickly shipped a successful prototype, very well received. We ended up with another contract for developing the long-term project itself.
 
-The prototype was very well received. So, with another contract down the line, we faced scaling the project way over what we than had. To meet a tight deadline, we took other developers on the team. After all, a bigger team means that things go faster – that’s how it’s supposed to work, isn’t it?
+With another big goal down the line, we faced scaling or framework way over what we than had. To meet a tight deadline, we took other developers on the team. After all, a bigger team means that things go faster – that’s how it’s supposed to work, isn’t it?
 
 Well, not in our case. As soon as more people laid their hands on the project, serious problems began.
 
