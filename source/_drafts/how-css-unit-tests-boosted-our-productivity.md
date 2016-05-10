@@ -7,7 +7,7 @@ cover: /img/machinery
 
 The way you manage styles can make or break a long-running web project. Keeping things modular helps a great deal, but that’s only part of the solution.
 
-Six months ago we had a go at setting up CSS unit tests for our components. Brilliant decision, as it turns out! Since then, our job is a lot nicer. The speed of development is fast and steady. Each of us on the team is now coding with confidence, without the fear that things might unexpectedly break.
+Six months ago we had a go at setting up CSS unit tests for our UI components. Brilliant decision, as it turns out! Since then, our job is a lot nicer. The speed of development is fast and steady. Each of us on the team is now coding with confidence, without the fear that things might unexpectedly break.
 
 And here’s how we did it:
 
