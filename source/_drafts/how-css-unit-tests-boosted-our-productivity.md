@@ -254,9 +254,9 @@ I mentioned [another problem](#/our-story/fat-stylesheets) at the beginning of t
 
 So let’s see how our CSS unit tests help us keep our stylesheets lean.
 
-We face the implementation of with another cool design, which no longer has one element centered within a parent – but two of them, stacked one under the other.
+Say, the designer comes to us with the next cool thing on his mind. Now we need not one element centered within a parent – but two of them, stacked one under the other.
 
-The immediate idea is to create a new component for that, or an extra modifier for our component. This all means more code. But maybe, just maybe, it might be possible with our little component – without adding any new classes? Let’s check that by adding some new requirements to our existing ones:
+The immediate idea is to create a new component for that, or an extra modifier for our existing one. This all means more code. But maybe, just maybe, it might be possible with our little component – without adding any new classes? Let’s check that by adding some new requirements to our existing ones:
 
 * If we have two `.child` elements, they should be stacked one over the other.
 * Both `.child`ren should be centered horizontally.
