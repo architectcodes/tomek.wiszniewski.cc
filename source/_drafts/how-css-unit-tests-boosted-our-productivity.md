@@ -142,7 +142,7 @@ But what about CSS? How is it possible to keep a similar pace of development the
 
 Writing unit tests for CSS is a lot easier than it looks. If you’ve already written these for other languages, you’ll feel right at home.
 
-This section is structured like a simple tutorial – feel free to follow along or play around with the live snippets. At the end of the article, I’ll explain how to run the tests headlessly and get the workflow more automated.
+This section is structured like a simple tutorial – feel free to follow along or play around with the live snippets. Just make sure you’re using an up-to-date version of Chrome or Firefox. At the end of the article, I’ll explain how to run the tests headlessly and get the workflow more automated.
 
 Our task is to solve the perennial problem of [centering an element within its parent both horizontally and vertically][heres-how.B1]. We’ll do this in a test-driven manner and go on to see how this helps keep a steady pace of development in a UI-heavy project.
 
