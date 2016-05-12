@@ -59,7 +59,7 @@ The uncertainty of the poking-around approach leads to another problem – style
 
 Before we see the solution, let’s take a broader look at the problem itself. CSS was originally designed to power simple websites – and it’s a wonderful tool for that. It’s amazing, how quickly you can get up and running creating beautiful UI nuggets, which work across all platforms and devices. Just a few lines of CSS make a pretty decent-looking button:
 
-<iframe src="https://jsfiddle.net/27eb7a01/embedded/css,html,result" style="border: none; width: 100%; height: 13em"></iframe>
+<iframe src="https://jsfiddle.net/27eb7a01/1/embedded/css,html,result" style="border: none; width: 100%; height: 13em"></iframe>
 
 But since CSS appeared in 1996, the web has changed beyond recognition. We’re now delivering full-blown apps with beautiful, immersive user experiences. Like never before, we’re living the “write once, run anywhere” dream. Web apps [run without installation][step-back.A] on any device and adapt to the size of the screen, network availability, user permissions, pointing device, viewing mode, browser support and other factors.
 
