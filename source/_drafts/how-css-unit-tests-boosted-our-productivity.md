@@ -288,14 +288,14 @@ is no code at all
 
 This wasn’t possible before with CSS. It’s an amazing thing, if you ask me!
 
-{% raw %}<a id="/slim-stylesheets/numbers"></a>{% endraw %}
-
 <p class="text-center"><figure><img class="img-responsive"
   src="/post-images/yeeees.gif"
   alt="“Yeeees!” – says an excited girl wearing glasses"
   width="400"
   height="400"
 /><figcaption>Source: giphy.com</figcaption></figure></p>
+
+{% raw %}<a id="/slim-stylesheets/numbers"></a>{% endraw %}
 
 Here’s some stunning numbers I promised you earlier. About 15 months of developing the project traditionally (the poking-around approach) in a team of 1 to 2 developers – and the built stylesheet weighed around 190 kB. 6 months of test-driven development onwards, with a team of 3–5, and we’ve **just grown the stylesheet by 40 kB**! Don’t get me wrong – **we’ve been shipping features way faster than ever**! It’s just that now we have a lot more opportunity to extend, reuse, remix and slim down what’s already there.
 
