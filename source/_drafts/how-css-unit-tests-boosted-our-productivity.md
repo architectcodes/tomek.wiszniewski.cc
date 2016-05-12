@@ -43,15 +43,12 @@ Even if the change works well in one test view, we have no way of knowing if it 
 
 {% raw %}<a id="/our-story/fat-stylesheets"></a>{% endraw %}
 
-The uncertainty of the poking-around approach leads to another problem – stylesheets growing fat over time. “Why is this CSS rule here? This view looks good if I change it, but what if I break another view? I’d better add a new class and use the new one instead.” Everyone keeps adding stuff to the CSS, rather than reusing, optimizing or cleaning up existing code.
+The uncertainty of the poking-around approach leads to another problem – stylesheets growing fat over time. “Why is this CSS rule here? This view looks good if I change it, but what if the change breaks another view? I’d better add a new class and use the new one instead.” Everyone keeps adding stuff to the CSS, rather than reusing, optimizing or cleaning up existing code. There are some [stunning numbers](#/slim-stylesheets/numbers) related to this at the end of the article.
 
 <p class="text-center"><figure><img class="img-responsive"
   src="/post-images/stacking-foam-blocks.gif"
   alt="Video of a guy stacking giant foam blocks in a warehouse"
-  style="width: 100%"
 /><figcaption>Source: giphy.com</figcaption></figure></p>
-
-About a year after developing the project traditionally (the poking-around approach) in a team of 1 to 2 developers, the built stylesheet weighed around 200 kB (4400 lines of CSS). 6 months of test-driven development onwards, with a team of 3–5, and we’ve just grown 30 kB (we’re at 6000 lines of CSS now)! Don’t get me wrong – we have shipped loads of new features! It’s just that now we have a lot more opportunity to extend, reuse, remix and slim down what’s already there.
 
 
 
@@ -84,7 +81,6 @@ Let’s focus on CSS. We all know the [problems with CSS at scale][step-back.C].
   alt="CSS at scale is like Bart Simpson playing Jenga"
   width="500"
   height="281"
-  style="width: 100%"
 /><figcaption>Source: giphy.com</figcaption></figure></p>
 
 Brilliant folks keep coming up with [loads][step-back.B2] [of][step-back.B3] [brilliant][step-back.B4] [solutions][step-back.B5] to many of these problems. We are learning to [write our styles in a modular way][step-back.B6], not needing to worry about the global namespace anymore. We’re learning to [share variables and logic between CSS and JS][step-back.B1]. All this improves scalability – but it’s just part of the solution. Just as the arrival of modules to JavaScript didn’t magically make our apps well-organized and bug-free, modular CSS isn’t a cure for everything.
@@ -233,7 +229,6 @@ Pretty cool, isn’t it?
   alt="“Brent Rambo approves” in an Apple ad from the early 90s"
   width="320"
   height="240"
-  style="width: 100%"
 /><figcaption>Source: imgur.com</figcaption></figure></p>
 
 
@@ -291,16 +286,25 @@ Hey, let’s have a look at what we’ve just done. We added another feature by 
 is no code at all
 {% endblockquote %}
 
-This wasn’t possible before with CSS. If you ask me, it’s amazing! Really, really amazing.
+This wasn’t possible before with CSS. It’s an amazing thing, if you ask me!
+
+{% raw %}<a id="/slim-stylesheets/numbers"></a>{% endraw %}
 
 <p class="text-center"><figure><img class="img-responsive"
   src="/post-images/yeeees.gif"
   alt="“Yeeees!” – says an excited girl wearing glasses"
   width="400"
   height="400"
-  style="width: 100%"
 /><figcaption>Source: giphy.com</figcaption></figure></p>
 
+Here’s some stunning numbers I promised you earlier. About 15 months of developing the project traditionally (the poking-around approach) in a team of 1 to 2 developers – and the built stylesheet weighed around 190 kB. 6 months of test-driven development onwards, with a team of 3–5, and we’ve **just grown the stylesheet by 40 kB**! Don’t get me wrong – **we’ve been shipping features way faster than ever**! It’s just that now we have a lot more opportunity to extend, reuse, remix and slim down what’s already there.
+
+<p class="text-center"><img class="img-responsive img-responsive·seamless"
+  src="/post-images/css-unit-tests-and-development-pace.svg"
+  width="780"
+  height="1200"
+  alt="“CSS development: traditional vs test-driven” – graph"
+/></p>
 
 
 
@@ -327,6 +331,8 @@ Secondly, what we’ve just tested is positioning and dimensions – the hardest
 
 [in-a-nutshell.B1]: http://devdocs.io/dom/window/getcomputedstyle "window.getComputedStyle – on DevDocs"
 
-If you’ve got any comments, ideas you’d like to share or critical thoughts, don’t hesitate to leave a comment below! If you try out our ideas, feel free to give me a shout at [@tomekwi_](https://twitter.com/tomekwi_).
+Warm thanks for [Ossi Hanhinen](https://ohanhi.github.io/) for reading a draft of this article and suggesting improvements.
+
+If you’ve got any comments, ideas you’d like to share or critical thoughts, don’t hesitate to leave a comment below or give me a shout at [@tomekwi_](https://twitter.com/tomekwi_).
 
 If you liked this article, you can help me spread the word by [sharing it on Twitter](https://twitter.com/share?text=%E2%80%9CHow%20CSS%20unit%20tests%20boosted%20our%20productivity%E2%80%9D%20%E2%80%94%20by%20%40tomekwi_&url=http%3A%2F%2Ftomek.wiszniewski.cc%2Fhow-css-unit-tests-boosted-our-productivity%2F). Thanks a lot!
