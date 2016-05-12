@@ -32,22 +32,26 @@ CSS gets hairy
 
 {% raw %}<a id="/our-story/regressions"></a>{% endraw %}
 
-“Why is this CSS rule here? What happens if I change it? Looks good in this view, should be okay.” — “This other view is broken! Why was this line of CSS over there changed three weeks ago?” We all know this, right?
+“Why is this CSS rule here? What happens if I change it? Looks good in this view, should be okay.” That was the way we used to develop our components. One of them created back then by an external contributor has been a source of countless bugs over the last months. No-one knows what his CSS was meant to do and what to pay attention to when changing it. Whenever one of us has to extend that component, he has to summon all his courage and pick the only choice he has. It’s a very brittle way, which we call…
 
 {% pullquote %}
-“Poking around  
-until it works”
+“poking around  
+until it works.”
 {% endpullquote %}
+
+Even if the change works well in one test view, we have no way of knowing if it doesn’t break another view or the live app itself.
 
 {% raw %}<a id="/our-story/fat-stylesheets"></a>{% endraw %}
 
-On the other hand, we all know the feeling when stylesheets grow fat over time, out of uncertainty. “Why is this CSS rule here? This view looks good if I change it, but what if I break another view? I’d better add a new class and use the new one instead.” Everyone keeps adding stuff to the CSS, rather than reusing, optimizing or cleaning up existing code.
+The uncertainty of the poking-around approach leads to another problem – stylesheets growing fat over time. “Why is this CSS rule here? This view looks good if I change it, but what if I break another view? I’d better add a new class and use the new one instead.” Everyone keeps adding stuff to the CSS, rather than reusing, optimizing or cleaning up existing code.
 
 <p class="text-center"><figure><img class="img-responsive"
   src="/post-images/stacking-foam-blocks.gif"
   alt="Video of a guy stacking giant foam blocks in a warehouse"
   style="width: 100%"
 /><figcaption>Source: giphy.com</figcaption></figure></p>
+
+About a year after developing the project traditionally (the poking-around approach) in a team of 1 to 2 developers, the built stylesheet weighed around 200 kB (4400 lines of CSS). 6 months of test-driven development onwards, with a team of 3–5, and we’ve just grown 30 kB (we’re at 6000 lines of CSS now)! Don’t get me wrong – we have shipped loads of new features! It’s just that now we have a lot more opportunity to extend, reuse, remix and slim down what’s already there.
 
 
 
@@ -78,6 +82,8 @@ Let’s focus on CSS. We all know the [problems with CSS at scale][step-back.C].
 <p class="text-center"><figure><img class="img-responsive"
   src="/post-images/simpsons-jenga.gif"
   alt="CSS at scale is like Bart Simpson playing Jenga"
+  width="500"
+  height="281"
   style="width: 100%"
 /><figcaption>Source: giphy.com</figcaption></figure></p>
 
@@ -114,6 +120,8 @@ Facebook [used to say “move fast and break things”][moving-fast.C] – but a
 <p class="text-center"><figure><img class="img-responsive"
   src="/post-images/move-fast-with-stable-infra.jpg"
   alt="Mark Zuckerberg saying “move fast with stable infra”"
+  width="794"
+  height="459"
 /><figcaption>Source: facebook</figcaption></figure></p>
 
 But what exactly does it mean to “not look back”? What exactly does “stable infra” mean? How to make sure nobody worries about changing code? Eric Elliott gives us another hint in his [series of][moving-fast.B2] [thought-provoking articles][moving-fast.B1]:
@@ -223,6 +231,8 @@ Pretty cool, isn’t it?
 <p class="text-center"><figure><img class="img-responsive"
   src="/post-images/brent-rambo.gif"
   alt="“Brent Rambo approves” in an Apple ad from the early 90s"
+  width="320"
+  height="240"
   style="width: 100%"
 /><figcaption>Source: imgur.com</figcaption></figure></p>
 
@@ -286,6 +296,8 @@ This wasn’t possible before with CSS. If you ask me, it’s amazing! Really, r
 <p class="text-center"><figure><img class="img-responsive"
   src="/post-images/yeeees.gif"
   alt="“Yeeees!” – says an excited girl wearing glasses"
+  width="400"
+  height="400"
   style="width: 100%"
 /><figcaption>Source: giphy.com</figcaption></figure></p>
 
