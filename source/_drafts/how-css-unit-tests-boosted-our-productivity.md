@@ -312,7 +312,7 @@ Here’s some stunning numbers I promised you earlier. About 15 months of develo
 
 ## In a nutshell
 
-Writing unit tests for the UI is a whole new quality of development in the world of CSS. Until now, the only popular form of testing the UI I’m aware of was integration testing by [comparing screenshots][in-a-nutshell.A1]. In my opinion, though it does help spot regressions faster, it doesn’t really make you move faster. You can’t write your tests before implementing stuff. You can’t automate it fully. You can’t run the tests in different browsers without significant infrastructure overhead. Oh, and it’s way too slow for live development workflow – whereas proper unit tests deliver you results within milliseconds of saving the stylesheet.
+Writing unit tests for the UI is a whole new quality of development in the world of CSS. Until now, the only popular form of testing the UI I’m aware of was integration testing by [comparing screenshots][in-a-nutshell.A1]. In my opinion, though it does help spot regressions faster, it doesn’t really make you move faster. You can’t write your tests before implementing stuff. You can’t automate it fully. You can’t run the tests in different browsers without significant infrastructure overhead. Oh, and it’s way too slow for a live development workflow – whereas proper unit tests deliver you results within milliseconds of saving the stylesheet.
 
 [in-a-nutshell.A1]: http://tldr.huddle.com/blog/css-testing/ "CSS regression testing"
 
