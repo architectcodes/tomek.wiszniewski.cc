@@ -1,9 +1,11 @@
 ---
-title: How CSS unit tests helped us move fast
+title: "How CSS unit tests helped\_us move\_fast"
 author: Tomek Wiszniewski
-author_url: https://github.com/tomekwi
+author_url: 'https://github.com/tomekwi'
 cover: /img/machinery
+date: 2016-05-13 13:25:05
 ---
+
 
 The way you manage styles can make or break a long-running web project. Keeping things modular helps a great deal, but that’s only part of the solution.
 
