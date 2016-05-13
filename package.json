@@ -7,7 +7,7 @@
   },
   "scripts": {
     "deploy": "npm run regenerate && surge --domain=tomek.wiszniewski.cc --project=public",
-    "regenerate": "rm -rf public && hexo generate",
+    "regenerate": "git clean -dxf public && hexo generate && git checkout public",
     "start": "concurrently 'hexo generate --watch' 'budo --dir=public --live --open'"
   },
   "dependencies": {

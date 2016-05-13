@@ -1,5 +1,5 @@
 ---
-title: How CSS unit tests boosted our productivity
+title: How CSS unit tests helped us move fast
 author: Tomek Wiszniewski
 author_url: https://github.com/tomekwi
 cover: /img/machinery
