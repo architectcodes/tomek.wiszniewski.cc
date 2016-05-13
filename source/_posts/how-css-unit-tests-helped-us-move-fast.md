@@ -314,7 +314,7 @@ Here’s some stunning numbers I promised you earlier. About 15 months of develo
 
 ## In a nutshell
 
-Writing unit tests for the UI is a whole new quality of development in the world of CSS. Until now, the only popular form of testing the UI I’m aware of was integration testing by [comparing screenshots][in-a-nutshell.A1]. In my opinion, though it does help spot regressions faster, it doesn’t really make you move faster. You can’t write your tests before implementing stuff. You can’t automate it fully. You can’t run the tests in different browsers without significant infrastructure overhead. Oh, and it’s way too slow for a live development workflow – whereas proper unit tests deliver you results within milliseconds of saving the stylesheet.
+Writing unit tests for the UI is a whole new quality of development in the world of CSS. The only other form of automated UI rendering tests I’m aware of is integration testing by [comparing screenshots][in-a-nutshell.A1]. In my opinion, though it does help spot regressions faster, it doesn’t really make you move faster. You can’t write your tests before implementing stuff. You can’t automate it fully. You can’t run the tests in different browsers without significant infrastructure overhead. Oh, and it’s way too slow for a live development workflow – whereas proper unit tests deliver you results within milliseconds of saving the stylesheet.
 
 [in-a-nutshell.A1]: http://tldr.huddle.com/blog/css-testing/ "CSS regression testing"
 
@@ -334,7 +334,7 @@ Secondly, what we’ve just tested is positioning and dimensions – the hardest
 [in-a-nutshell.B1]: http://devdocs.io/dom/window/getcomputedstyle "window.getComputedStyle – on DevDocs"
 [in-a-nutshell.B2]: https://github.com/inuscript/sort-specificity "Sort css selector for specificity – inuscript/sort-specificity"
 
-Warm thanks for Ossi Hanhinen and Barboros Can Konar for reading a draft of this article and suggesting improvements.
+Warm thanks for Ossi Hanhinen, Barboros Can Konar and Scott Corgan for reading through previous versions of this article and suggesting improvements.
 
 If you’ve got any comments, ideas you’d like to share or critical thoughts, don’t hesitate to leave a comment below or give me a shout at [@tomekwi_](https://twitter.com/tomekwi_).
 
