@@ -331,7 +331,7 @@ Secondly, what we’ve just tested is positioning and dimensions – the hardest
 
 [in-a-nutshell.B1]: http://devdocs.io/dom/window/getcomputedstyle "window.getComputedStyle – on DevDocs"
 
-Warm thanks for [Ossi Hanhinen](https://ohanhi.github.io/) for reading a draft of this article and suggesting improvements.
+Warm thanks for Ossi Hanhinen and Barboros Can Konar for reading a draft of this article and suggesting improvements.
 
 If you’ve got any comments, ideas you’d like to share or critical thoughts, don’t hesitate to leave a comment below or give me a shout at [@tomekwi_](https://twitter.com/tomekwi_).
 
