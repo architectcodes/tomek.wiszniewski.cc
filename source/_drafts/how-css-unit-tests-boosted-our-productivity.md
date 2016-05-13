@@ -57,7 +57,7 @@ The uncertainty of the poking-around approach leads to another problem – style
 
 ## A step back
 
-Before we see the solution, let’s take a broader look at the problem itself. CSS was originally designed to power simple websites – and it’s a wonderful tool for that. It’s amazing, how quickly you can get up and running creating beautiful UI nuggets, which work across all platforms and devices. Just a few lines of CSS make a pretty decent-looking button:
+Before we see the solution, let’s take a broader look at the problem itself. CSS was originally designed to power simple websites – and it’s a wonderful tool for that. It’s amazing, how quickly you can get up and running creating beautiful UI nuggets, which work across all platforms and devices. Just a few lines of CSS make a pretty decent button:
 
 <iframe src="https://jsfiddle.net/27eb7a01/1/embedded/css,html,result" style="border: none; width: 100%; height: 13em"></iframe>
 
