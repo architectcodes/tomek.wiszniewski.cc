@@ -299,7 +299,7 @@ This wasn’t possible before with CSS. It’s an amazing thing, if you ask me!
 
 {% raw %}<a id="/slim-stylesheets/numbers"></a>{% endraw %}
 
-Here’s some stunning numbers I promised you earlier. About 15 months of developing the project traditionally (the poking-around approach) in a team of 1 to 2 developers – and the built stylesheet weighed around 190 kB. 6 months of test-driven development onwards, with a team of 3–4 for the most time, and we’ve **just grown the stylesheet by 40 kB**! Don’t get me wrong – **we’ve been shipping features way faster than ever**! It’s just that now we have a lot more opportunity to extend, reuse, remix and slim down what’s already there.
+Here’s some stunning numbers I promised you earlier. About 15 months of developing the project traditionally (the poking-around approach) in a team of 1 to 2 developers – and the built stylesheet weighed around 190 kB. 6 months of test-driven development onwards, with a team of 3–5, and we’ve **just grown the stylesheet by 40 kB**! Don’t get me wrong – **we’ve been shipping features way faster than ever**! It’s just that now we have a lot more opportunity to extend, reuse, remix and slim down what’s already there.
 
 <p class="text-center"><img class="img-responsive img-responsive·seamless"
   src="/post-images/css-unit-tests-and-development-pace.svg"
