@@ -15,7 +15,7 @@ If you want to master something, teach it.
 {% endblockquote %}
 
 {% blockquote Kornelije Petak http://code.kornelijepetak.com/climb-the-curve/ Climb the curve %}
-![Solution quality vs thinking time](/post-images/quality-over-time.png)
+![Graph: “Solution quality vs thinking time”](/post-images/quality-over-time.png)
 {% endblockquote %}
 
 {% raw %}<a id="/web-best-app-delivery-platform"></a>{% endraw %}
@@ -28,4 +28,8 @@ that is better than what web apps have today.
 {% blockquote Bill Scott https://vimeo.com/91537336 Bringing Change to Life %}
 The outside-in culture: Get out of the building! • Custom metrics driving everything. • Fail fast, learn fast.  
 Lots of experimentation.
+{% endblockquote %}
+
+{% blockquote xkcd.com https://xkcd.com/1205/ Is it worth the time? %}
+![Chart: “How long can you work on making a routine task more efficient before you’re spending more time than you save?”](/post-images/making-routine-tasks-more-efficient.png)
 {% endblockquote %}
