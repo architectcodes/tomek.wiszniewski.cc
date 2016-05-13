@@ -327,9 +327,10 @@ Before you go, I’d like to share two small facts with you.
 
 Firstly, the example you’ve seen in the tutorial isn’t a contrived case made up for the blog post. It’s the exact story of one of our production components. To make the story more interesting, the component `middle` which does that is a low-level component, which other components mix in as an internal dependency. After the fundamental change we explored in the [*No more fat stylesheets*](#/slim-stylesheets) section, all dependent components continued to work without a glitch.
 
-Secondly, what we’ve just tested is positioning and dimensions – the hardest and most important things to get right with CSS. But with tools like [`getComputedStyle`][in-a-nutshell.B1] you can actually test anything you want. We started out by testing dimensions, but experience taught us to test virtually everything. That’s right, 100% code coverage on CSS components! (We’re even toying with the idea of a CSS code coverage tool. More details soon, hopefully!)
+Secondly, what we’ve just tested is positioning and dimensions – the hardest and most important things to get right with CSS. But with tools like [`getComputedStyle`][in-a-nutshell.B1] and [*sort-specificity*][in-a-nutshell.B2] you can actually test anything you want. We started out by testing dimensions, but experience taught us to test virtually everything. That’s right, 100% code coverage on CSS components! (We’re even toying with the idea of a CSS code coverage tool. More details soon, hopefully!)
 
 [in-a-nutshell.B1]: http://devdocs.io/dom/window/getcomputedstyle "window.getComputedStyle – on DevDocs"
+[in-a-nutshell.B2]: https://github.com/inuscript/sort-specificity "Sort css selector for specificity – inuscript/sort-specificity"
 
 Warm thanks for Ossi Hanhinen and Barboros Can Konar for reading a draft of this article and suggesting improvements.
 
