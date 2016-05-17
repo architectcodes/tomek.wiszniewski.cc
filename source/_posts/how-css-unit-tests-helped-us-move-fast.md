@@ -338,4 +338,4 @@ Warm thanks for Ossi Hanhinen, Barboros Can Konar and Scott Corgan for reading t
 
 If you’ve got any comments, ideas you’d like to share or critical thoughts, don’t hesitate to leave a comment below or give me a shout at [@tomekwi_](https://twitter.com/tomekwi_).
 
-If you liked this article, you can help me spread the word by [sharing it on Twitter](https://twitter.com/share?text=%E2%80%9CHow%20CSS%20unit%20tests%20boosted%20our%20productivity%E2%80%9D%20%E2%80%94%20by%20%40tomekwi_&url=http%3A%2F%2Ftomek.wiszniewski.cc%2Fhow-css-unit-tests-boosted-our-productivity%2F). Thanks a lot!
+If you liked this article, you can help me spread the word by [sharing it on Twitter](https://twitter.com/share?text=%E2%80%9CHow%20CSS%20unit%20tests%20helped%20us%20move%20fast%E2%80%9D%20%E2%80%94%20by%20%40tomekwi_&url=http%3A%2F%2Ftomek.wiszniewski.cc%2Fhow-css-unit-tests-helped-us-move-fast%2F). Thanks a lot!
