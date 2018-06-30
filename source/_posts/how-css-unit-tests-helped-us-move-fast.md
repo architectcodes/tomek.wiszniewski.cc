@@ -1,7 +1,7 @@
 ---
 title: "How CSS unit tests helped\_us move\_fast"
 author: Tomek Wiszniewski
-author_url: 'https://github.com/tomekwi'
+author_url: 'https://github.com/architectcodes'
 cover: /img/machinery
 date: 2016-05-13 13:25:05
 ---
@@ -87,7 +87,7 @@ Let’s focus on CSS. We all know the [problems with CSS at scale][step-back.C].
 
 Brilliant folks keep coming up with [loads][step-back.B2] [of][step-back.B3] [brilliant][step-back.B4] [solutions][step-back.B5] to many of these problems. We are learning to [write our styles in a modular way][step-back.B6], not needing to worry about the global namespace anymore. We’re learning to [share variables and logic between CSS and JS][step-back.B1]. All this improves scalability – but it’s just part of the solution. Just as the arrival of modules to JavaScript didn’t magically make our apps well-organized and bug-free, modular CSS isn’t a cure for everything.
 
-[step-back.B1]: https://git.io/jss-lite-loader#/usage/code-sharing "A css-in-js webpack loader – tomekwi/jss-lite-loader"
+[step-back.B1]: https://git.io/jss-lite-loader#/usage/code-sharing "A css-in-js webpack loader – architectcodes/jss-lite-loader"
 [step-back.B2]: https://github.com/jsstyles/jss "A lib for generating Style Sheets with JavaScript – jsstyles/jss"
 [step-back.B3]: https://github.com/krasimir/cssx "CSS in JavaScript – krasimir/cssx"
 [step-back.B4]: https://github.com/css-modules/css-modules "A CSS file in which all names are scoped locally by default – css-modules/css-modules"
@@ -336,6 +336,6 @@ Secondly, what we’ve just tested is positioning and dimensions – the hardest
 
 Warm thanks for Ossi Hanhinen, Barboros Can Konar and Scott Corgan for reading through previous versions of this article and suggesting improvements.
 
-If you’ve got any comments, ideas you’d like to share or critical thoughts, don’t hesitate to leave a comment below or give me a shout at [@thetomekwi](https://twitter.com/thetomekwi).
+If you’ve got any comments, ideas you’d like to share or critical thoughts, don’t hesitate to leave a comment below or give me a shout at [@architectcodes](https://twitter.com/architectcodes).
 
-If you liked this article, you can help me spread the word by [sharing it on Twitter](https://twitter.com/share?text=%E2%80%9CHow%20CSS%20unit%20tests%20helped%20us%20move%20fast%E2%80%9D%20%E2%80%94%20by%20%40thetomekwi&url=http%3A%2F%2Ftomek.wiszniewski.cc%2Fhow-css-unit-tests-helped-us-move-fast%2F). Thanks a lot!
+If you liked this article, you can help me spread the word by [sharing it on Twitter](https://twitter.com/share?text=%E2%80%9CHow%20CSS%20unit%20tests%20helped%20us%20move%20fast%E2%80%9D%20%E2%80%94%20by%20%40architectcodes&url=http%3A%2F%2Ftomek.wiszniewski.cc%2Fhow-css-unit-tests-helped-us-move-fast%2F). Thanks a lot!
